@@ -1,2 +1,2 @@
-# front-en-portfolio
+# front-end-portfolio
 Repository created for the challenge of Argentina Program
