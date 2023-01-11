@@ -88,6 +88,8 @@ position: relative;
     
 }
 .header{
+    font-family: var(--font2);
+    font-weight: 400;
     width: 100%;
     min-height: 80px;
     display: flex;
