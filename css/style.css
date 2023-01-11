@@ -45,8 +45,9 @@ position: relative;
     position: fixed;
     width: 50%;
     height: 50%;
+    filter: blur(50px);
     animation:blobsk 15s linear infinite both;
-    filter: blur(100px);
+    
 
 }
 
@@ -77,6 +78,7 @@ position: relative;
     fill: rgba(247, 0, 255, 0.7)
 }
 .blobs .blob4{
+
     bottom: 0;
     right: 0;
     }
@@ -93,6 +95,7 @@ position: relative;
     justify-content: space-between;
     align-items: center;
     padding: 16px 32px;
+    position: relative;
     
 }
 
@@ -109,8 +112,11 @@ position: relative;
 
 
 .ul .li .a:hover{
-    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
     transition: all 1s ease;
+}
+.about .p{
+    font-family: var(--font2);
 }
 
 .sectiondiv{
@@ -126,7 +132,7 @@ position: relative;
 .main{
     margin: 0 0 16px;
     text-align: center;
-    position: relative;
+    position: fixed;
 }
 
 
@@ -262,9 +268,9 @@ padding:  16px 16px;
 
 @keyframes blobsk{
     from{
-        transform:rotate(0deg) scale(3)
+        transform:rotate(0deg) scale(4)
     }
     to{
-        transform: rotate(360deg) scale(3);
+        transform: rotate(360deg) scale(4);
     }
 }
