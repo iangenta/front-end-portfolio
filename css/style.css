@@ -30,7 +30,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+
 button{
     background: none;
     border: none;
@@ -59,10 +61,14 @@ padding-bottom: 24px;
     padding-right: 24px;
 }
 
+.body{
+    background-color: #f3f2ef;
+
+}
 
 
 .header{
-    background-color: #ffffff;
+    background-color: #f3f2ef;
     display: flex;
     justify-content: space-between;
     padding: 0 var(--spacing-three-x);
@@ -71,7 +77,7 @@ padding-bottom: 24px;
     width: 100vw;
     position: fixed;
     z-index: 100;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.034);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
 
 }
 .header .img-arg-prg{
@@ -164,7 +170,7 @@ border-top-right-radius:0.8rem;
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-default);
 }
-#location{
+.span-subtitle{
     font-size: 1rem;
     font-weight: var(--font-weight-regular);
     color: rgba(0, 0, 0, 0.6);
@@ -203,4 +209,76 @@ border-top-right-radius:0.8rem;
 #actions{
     display: flex;
     padding-top: 1.2rem;
+}
+
+
+.section-about{
+    border-radius: 0.8rem;
+    background-color: #ffffff;
+    padding-bottom:12px ;
+}
+.head-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--spacing-one-and-a-half-x);
+    padding-bottom: 0;
+
+}
+.c-container{
+    display: flex;
+    flex-direction: row;
+
+}
+.card-head-container{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.h2-title-container{
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-one-and-a-half-x) var(--spacing-one-and-a-half-x) 0;
+
+
+}
+.item-edit{
+    display: flex;
+
+}
+.p-container{
+    display: flex;
+padding-top: 12px;
+padding-bottom: 12px;
+}
+
+.btn-edit{
+    display: flex;
+    align-items: center;
+}
+.experience-div{
+    display: flex;
+    padding: 1.2rem 0;
+    padding-left: var(--spacing-three-x);
+    padding-right:var(--spacing-three-x) ;
+    border-bottom: 1px solid #f3f2ef;
+}
+.title-experience-container{
+    display:flex;
+    align-items: center;
+}
+.sep{
+    margin-right: 4px !important;
+    font-weight: var(--font-weight-bold);
+}
+.image-experience-container{
+    width: 48px;
+    height: 48px;
+    box-sizing: border-box;
+    background-clip: content-box;
+    border: 4px solid transparent;
+    border-radius: 6px;
 }
