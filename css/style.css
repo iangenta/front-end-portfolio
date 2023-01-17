@@ -1,0 +1,145 @@
+:root{
+    --spacing-half-x: 0.4rem;
+    --spacing-one-x: 0.8rem;
+    --spacing-one-and-a-half-x: 1.2rem;
+    --spacing-two-x: 1.6rem;
+    --spacing-three-x: 2.4rem;
+    --spacing-four-x: 3.2rem;
+    --spacing-six-x: 4.8rem;
+    --spacing-eight-x: 6.4rem;
+    --spacing-twelve-x: 9.6rem;
+    --spacing-sixteen-x: 12.8rem;
+    --spacing-twenty-four-x: 19.2rem;
+    --spacing-thirty-two-x: 25.6rem;
+    --font-size-xsmall: 1.2rem;
+    --font-size-small: 1.4rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 2rem;
+    --font-size-xlarge: 2.4rem;
+    --font-size-display-small: 2.4rem;
+    --font-size-display-medium: 3.2rem;
+    --font-size-display-large: 4.8rem;
+    --font-size-display-xlarge: 6.4rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 600;
+    --line-height-default: 1.25;
+    --line-height-open: 1.5;
+    --paragraph-spacing: 1.2rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+.display-flex{
+    display: flex !important;
+}
+
+.relative{
+    position: relative !important;
+}
+.text-align-left{
+    text-align: left;
+}
+.margin-top{
+    margin-top:8px;
+}
+.padding-vertical{
+padding-bottom: 24px;
+}
+.padding-horizontal{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+
+
+.e-card{
+margin: 1.2rem;
+
+}
+
+#profile-bg{
+    display: flex;
+    border-radius: 20px;
+    
+}
+#profile-bg img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+border-top-left-radius:0.8rem;
+border-top-right-radius:0.8rem;
+
+}
+
+.profile-image{
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    margin-top: -112px;
+    border:4px solid #ffffff;
+    background-color: #ffffff;
+    z-index: 4;
+}
+.contact-info-span{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: var(--font-weight-bold);
+    color:#0a66c2;
+    cursor: pointer;
+}
+.contact-info-span:hover{
+    text-decoration-line:underline;
+}
+.occupation{
+    font-size: 1.4rem;
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-default);
+}
+#location{
+    font-size: 1rem;
+    font-weight: var(--font-weight-regular);
+    color: rgba(0, 0, 0, 0.6);
+
+}
+#extend-info{
+    width: 232px;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.item-details{
+    display: flex;
+    width: 100%;
+}
+.company-logo{
+    width: 32px;
+    height: 32px;
+    margin-right:var(--spacing-one-x) ;
+}
+.btn-list-1{
+    margin-bottom: var(--spacing-one-x);
+}
+
+.company-name{
+    flex: 1;
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-default);
+    
+}
+
+#actions{
+    display: flex;
+    padding-top: 1.2rem;
+}
