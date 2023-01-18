@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function showFile(input){
     let file = input.files[0];
     let reader = new FileReader();
-    reader.readerAsText(file);
+    reader.readAsText(file);
     reader.onload = function(){
         document.getElementById('about-text').innerText=reader.result;
     };
