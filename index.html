@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
     <script src="/js/app.js"></script>
 </head>
 <body class="body">
@@ -117,8 +116,8 @@
                             <h2>Sobre mi</h2>
                         </div>
                     </div>
-                    <div class="item-edit" onclick="edit_about_me()">
-                        <div class="btn-edit " id="" ><a href="#" class="btn-right"><i><span  class="material-symbols-outlined">
+                    <div class="item-edit" >
+                        <div class="btn-edit " id="btn-edit" onclick="editP()" ><a href="#" class="btn-right" no-referrer><i><span  class="material-symbols-outlined">
                             edit
                             </span></i></a>
                         </div>
@@ -127,12 +126,12 @@
                 
             </div>  
 
+            <input type="text" id="edit-about" oninput="textResult(this.value)" placeholder="escribe aqui"style="display: none;">
 
 
             <div class="about-p">
                     <div class="p-container padding-horizontal">
-                            <p id="about-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt harum repellat quos optio atque pariatur earum culpa, quisquam dignissimos nulla, maxime mollitia assumenda saepe, quae obcaecati expedita consequatur alias corporis.</p>
-                            <input id="button-edit-about" type="text" oninput="new_text(this.value)" style="display:none">
+                            <p id="text-about">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt harum repellat quos optio atque pariatur earum culpa, quisquam dignissimos nulla, maxime mollitia assumenda saepe, quae obcaecati expedita consequatur alias corporis.</p>
                         </div>
             </div>
 
@@ -478,5 +477,6 @@
             </ul>
         </div>
     </section>
+
 </body>
 </html>

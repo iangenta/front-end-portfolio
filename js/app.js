@@ -1,38 +1,22 @@
-function edit_about_me(){
-    document.getElementById("button-edit-about").style.display="block";
-    let text = document.getElementById("about-text").innerText;
-    console.log(text)
-}
-function new_text(value){
-    document.getElementById("about-text").innerText=value;
+const d = document
+// esta función edita el parrafo con el id edit-about.
 
+function editP() {
+    event.preventDefault();
+    d.getElementById('edit-about').style.display = 'block';
+    d.getElementById('text-about').innerText
+}
+// esta funcion muestra como se veria el texto que se quiere ingresar.
+function textResult(value) {
+    d.getElementById('text-about').innerText = value
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    let textarea = document.getElementById('button-edit-about');
-    if (textarea) {
-        textarea.addEventListener('keyup', (e) => {
-            if (e.code === "Enter") {
-                console.log("Enter was press");
-                let button = document.getElementById('button-edit-about');
-                if (button) {
-                    button.style.display = "none";
-                }
-            }
-        });
+let textarea = d.getElementById('text-about');
+// esta función toma los valores que se ingresan en text-about 
+// si se presiona la tecla 'Enter' el input se oculta.
+textarea = addEventListener('keyup', (e) => {
+    if (e.key == 'Enter') {
+        d.getElementById('edit-about').style.display = 'none';
     }
-}, false);
+});
 
-
-function showFile(input){
-    let file = input.files[0];
-    let reader = new FileReader();
-    reader.readAsText(file);
-    reader.onload = function(){
-        document.getElementById('about-text').innerText=reader.result;
-    };
-    reader.onerror = function(){
-        console.log(reader.error);
-    }
-    
-}
