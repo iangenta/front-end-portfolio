@@ -435,3 +435,10 @@ input{
     border: 1px solid #393939;
 
 }
+
+@media (max-width: 745px){
+    #extend-info{
+        position: relative;
+    }
+
+}
